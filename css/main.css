@@ -1,0 +1,92 @@
+:root {
+    /*Primary*/
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    /*Neutral*/
+    --Very_Dark_Blue: hsl(234, 12%, 34%);
+    --Grayish_Blue: hsl(229, 6%, 66%);
+    --Very_Light_Gray: hsl(0, 0%, 98%);
+}
+
+
+body {
+    width: 100%;
+    max-width: 1440px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--Very_Light_Gray);
+    margin: 0 auto;
+}
+
+#main {
+    margin: 100px 0;
+}
+
+#main-h3 {
+    font-size: 28px;
+}
+
+#description {
+    font-size: 18px;
+    padding: 0 28px;
+    margin: 30px 0 20px 0;
+}
+
+#card1, #card1-2, #card2-2, #card2 {
+    height: 250px;
+    max-width: 500px;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: start;
+    margin: 20px auto;
+    box-shadow: 0px 12px 9px 3px rgba(0, 0, 0, 0.054);
+    border-radius: 0 0 10px 10px;
+    padding: 30px;
+    overflow: hidden;
+}
+
+#card1 {
+    border-top: 5px solid var(--Cyan);
+}
+
+#card1-2 {
+    border-top: 5px solid var(--Red);
+}
+
+#card2-2 {
+    border-top: 5px solid var(--Orange);
+}
+
+#card2 {
+    border-top: 5px solid var(--Blue);
+}
+
+#cards h3 {
+    font-weight: bold;
+}
+
+#cards p {
+    font-weight: 100;
+}
+
+@media screen and (min-width:500px){
+    #main-h3, h1, #description {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 650px;
+    }
+
+    #description {
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (min-width:1200px){
+    #two-cards {
+        margin: 0 20px;
+    }
+}
